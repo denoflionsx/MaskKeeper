@@ -1,6 +1,6 @@
 {
   "name": "MaskKeeper",
-  "version": "1.0.3-nightly@fb40aaa",
+  "version": "1.0.3-nightly@3a43acd",
   "description": "",
   "main": "MaskKeeper.js",
   "scripts": {
@@ -9,8 +9,8 @@
   "keywords": [],
   "author": "denoflions",
   "license": "MIT",
-  "core": "OcarinaofTime",
+  "core": "Z64Lib",
   "compression": "LZMA",
-  "date": "Mon, 11 Oct 2021 13:03:49 GMT",
-  "commit": "fb40aaa"
+  "date": "Mon, 11 Oct 2021 13:04:29 GMT",
+  "commit": "3a43acd"
 }
