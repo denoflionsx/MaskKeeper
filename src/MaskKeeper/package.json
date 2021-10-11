@@ -1,6 +1,6 @@
 {
   "name": "MaskKeeper",
-  "version": "1.0.3-nightly@3a43acd",
+  "version": "1.0.3-nightly@676a234",
   "description": "",
   "main": "MaskKeeper.js",
   "scripts": {
@@ -11,6 +11,6 @@
   "license": "MIT",
   "core": "Z64Lib",
   "compression": "LZMA",
-  "date": "Mon, 11 Oct 2021 13:04:29 GMT",
-  "commit": "3a43acd"
+  "date": "Mon, 11 Oct 2021 13:14:47 GMT",
+  "commit": "676a234"
 }
