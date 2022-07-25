@@ -4,8 +4,7 @@ import { IModLoaderAPI } from 'modloader64_api/IModLoaderAPI';
 import { ModLoaderAPIInject } from 'modloader64_api/ModLoaderAPIInjector';
 import { EventHandler } from 'modloader64_api/EventHandler';
 import { IZ64Main } from 'Z64Lib/API/Common/IZ64Main';
-import { Z64 } from 'Z64Lib/API/imports';
-import { AgeOrForm } from 'Z64Lib/API/Common/Z64API';
+import { AgeOrForm, Z64Events } from 'Z64Lib/API/Common/Z64API';
 
 export class MaskKeeperClient {
 
@@ -14,7 +13,7 @@ export class MaskKeeperClient {
     @InjectCore()
     core!: IZ64Main;
 
-    @EventHandler(Z64.OotEvents.ON_SCENE_CHANGE)
+    @EventHandler(Z64Events.ON_SCENE_CHANGE)
     onSceneChange(scene: number) {
         if (this.core.OOT!.save.age !== AgeOrForm.CHILD && !this.ModLoader.isModLoaded("ChildGear")) {
             return;
