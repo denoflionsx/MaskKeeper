@@ -15,10 +15,7 @@ export class MaskKeeperClient {
 
     @EventHandler(Z64Events.ON_SCENE_CHANGE)
     onSceneChange(scene: number) {
-        if (this.core.OOT!.save.age !== AgeOrForm.CHILD && !this.ModLoader.isModLoaded("ChildGear")) {
-            return;
-        }
-        let c_buttons: Buffer = this.ModLoader.emulator.rdramReadBuffer(global.ModLoader.save_context + 0x0068, 0x4);
+        let c_buttons: Buffer = this.ModLoader.emulator.rdramReadBuffer(0x8011A5D0 + 0x0068, 0x4);
         let mask = 0;
         for (let i = 0; i < c_buttons.byteLength; i++) {
             if (c_buttons[i] >= 0x24 && c_buttons[i] <= 0x2B) {
